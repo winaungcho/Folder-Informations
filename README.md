@@ -14,5 +14,5 @@ $folderinfo->printAll();
 ## Tree list of folder content
 ![Folder-Informations](folderinfo1.jpg)
 
-## Tableof file types and their size and count in total
+## Table of file types, their size and count in total
 ![Folder-Informations](folderinfo2.jpg)
