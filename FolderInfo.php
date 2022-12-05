@@ -95,7 +95,7 @@ class FolderInfo
         $info = $this->dirsize($dir);
         echo "Total Files: " . $info["n"];
         echo "<br/>";
-        echo "Total Size: ".number_format($info["s"]/1000000,2,'.', ',')."Mb";
+        echo "Total Size: ".number_format($info["s"]/1024/1024,2,'.', ',')."Mb";
         echo "<br/>";
         echo "<ul class='collapse'>";
         echo $info["html"];
@@ -105,7 +105,7 @@ class FolderInfo
         echo "<tr><th>Type</th><th>Count</th><th>Size (kb)</th></tr>";
         foreach ($info["e"] as $id => $value)
         {
-            echo "<tr><td>$id</td><td align='right'>" . $value['n'] . "</td><td align='right'>" . number_format($value['s']/1000, 2, '.', ',') . "</td></tr>";
+            echo "<tr><td>$id</td><td align='right'>" . $value['n'] . "</td><td align='right'>" . number_format($value['s']/1024, 2, '.', ',') . "</td></tr>";
         }
         echo "</table>";
     }
