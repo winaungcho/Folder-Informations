@@ -1,6 +1,6 @@
 # Folder-Informations
 Traverse the folder recursively and collect the several informations such as number of files count and size for each file type.
-Product html tree using list elements and links to view some text, video and image files.
+Produce html tree using list elements and links to view some text, video and image files.
 
 ## Example use
 
